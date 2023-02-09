@@ -8,16 +8,16 @@ string typeMovie;
 
 List<Movie> shows = new List<Movie>()
 {
-   new Movie() { title = "Terminator", category = "Action"},
-   new Movie() { title = "Poltergeist", category = "Horror"},
-   new Movie() { title = "Rio Bravo", category = "Western"},
-   new Movie() { title = "Ghost Busters", category = "Comedy"},
-   new Movie() { title = "West Side Story", category = "Drama"},
-   new Movie() { title = "Minions", category = "Comedy"},
-   new Movie() { title = "The Last Emporer", category = "Drama"},
-   new Movie() { title = "Star Wars", category = "SciFi"},
-   new Movie() { title = "Terminator II", category = "Action"},
-   new Movie() { title = "The Good the Bad and the Ugly", category = "Western"}
+   new Movie("Terminator", "Action"), // { title = "Terminator", category = "Action"},
+   new Movie("Poltergeist","Horror"),
+   new Movie("Rio Bravo", "Western"),
+   new Movie("Ghost Busters", "Comedy"),
+   new Movie("West Side Story", "Drama"),
+   new Movie("Minions", "Comedy"),
+   new Movie("The Last Emporer", "Drama"),
+   new Movie("Star Wars", "SciFi"),
+   new Movie("Terminator II", "Action"),
+   new Movie("The Good the Bad and the Ugly","Western")
 };
 
 Console.WriteLine("Welcome to the Movie List Application");
@@ -34,14 +34,13 @@ do
 
     bool gotOne = false;
 
-    foreach (Movie show in shows)
+    List<Movie> showResults = shows.Where(show => show.category.Equals(typeMovie)).ToList();
+
+    foreach (Movie result in showResults)
     {
-        if (typeMovie == show.category)
-        {
-            gotOne = true;
-            Console.WriteLine(show.title);
-        }
-        
+        gotOne = true;
+        Console.WriteLine(result.title);
+                  
     }
     if (!gotOne)
     {

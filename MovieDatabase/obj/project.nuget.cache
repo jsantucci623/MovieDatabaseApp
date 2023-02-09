@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hRoqOneu0KeJ+qgDcHaNrbeY4XNKelKRu/VO0V1p35Mhs43fglD0l4ySAChy2rTB5/GFStx5UEqBBsAEAcWU0w==",
+  "dgSpecHash": "6uzA+8ALf1CGdZC1dRRTTjZdQUzBPEJ3K773CKpDpfhG+sMd9JqeHyfnlWO731GFO7m+OFcaxhW5SKQRi3TJrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jsantucci\\source\\repos\\MovieDatabaseApp\\MovieDatabase\\MovieDatabase.csproj",
+  "projectFilePath": "D:\\repos\\MovieDatabaseApp\\MovieDatabase\\MovieDatabase.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
